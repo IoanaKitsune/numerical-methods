@@ -5,13 +5,13 @@ function centroids = clustering_pc(points, NC)
 
 	Points = points;
 	cluster_no = NC;
-	initial_centroids = first_centroids(Points, cluster_no);
+	initial_centroids = initCentroids(Points, cluster_no);
 
 	max_iterations = 100;
 
 	for i=1:max_iterations
-		indices = get_closest_centroids(Points, initial_centroids);
-  		centroids = update_centroids(Points, indices, cluster_no);
+		indices = getClosestCentroids(Points, initial_centroids);
+  		centroids = computeCentroids(Points, indices, cluster_no);
 		if(norm(centroids - initial_centroids) == 0)
 			break;
 		endif
