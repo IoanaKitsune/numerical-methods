@@ -1,0 +1,25 @@
+TEMA 1 -> METODE NUMERICE
+NUME: GRIGORE IOANA MARIA ALEXANDRA
+GRUPA 313CD
+
+FUNCTII ADITIONALE:
+1.first_centroids: returneaza NC puncte random din punctele date
+2.get_closest_centroids: calculeaza pentru fiecare punct care 
+			 centroid e cel mai aproape si returneaza 
+			 un vector de indici corespunzatori
+			 (punctul i e cel mai aproape de cluster-ul
+			 2 -> indices(i) = 2)
+3.update_centroids: schimba pozitia centroizilor astfel incat sa fie 
+		    mai centrati
+
+FUNCTII DIN CERINTA:
+-clustering_pc: aleg NC centroizi random, apoi calculez indicii clusterilor
+		 pentru fiecare punct; centrez centroizii pana cand nu se 
+		 mai modifica pozita lor 
+-view_clusters: colorez diferit punctele in functie de cel mai apropiat 
+		centroid
+-compute_cost_pc: aflu care e cel mai aproape centroid de fiecare punct si 
+		  adun distanta dintre el si centroid
+-view_cost_vs_nc: argumentul functiei e natural intre 1 si 10(sunt intr un vector)
+		  si valorile functiei sunt rezultatele functiei compute_cost_nc 
+		  in functie de argument(le am pus tot intr un vector)
